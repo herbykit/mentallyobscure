@@ -1,0 +1,170 @@
+/* Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Oxygen:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+  --nav-color: #312509;
+  --nav-text: white;
+  --nav-brightness: 90%;
+  --body-color: #b1f8f2;
+  --body-text: black;
+  --highlight: #8dB38b;
+  --foot-color: #c69c72;
+  --foot-text: black;
+  --default-num-columns: 3;
+  --nav-text-font: 'Oxygen', sans-serif;
+  --primary-text: 'Roboto Condense', sans-serif;
+  --bold-text: 'Oxygen', sans-serif;
+  --quote-text: 'Fuzzy Bubbles', cursive;
+}
+
+.navbar {
+  position: absolute;
+  background-color: var(--nav-color);
+  color: var(--nav-text);
+  height: 10%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  font-family: var(--nav-text-font);
+  font-style: bold;
+}
+
+.nav-title {
+  position: relative;
+  text-align: left;
+  float: left;
+  height: 100%;
+  width: 150px;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-family: inherit;
+}
+
+.navbar-button {
+  background-color: var(--nav-color);
+  color: var(--nav-text);
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: right;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.navbar-button:hover {
+  filter: brightness(var(--nav-brightness));
+  color: #a9a9a9;
+}
+
+.below-nav {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  left:0%;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--body-text);
+  font-family: var(--primary-text);
+}
+
+h1 h2 h3 h4 h5 h6 p {
+  color: inherit;
+}
+
+b {
+  font-family: var(--bold-text);
+  font-style: bold;
+}
+
+a {
+  color: var(--highlight);
+  text-decoration: none;
+  text-decoration-style: bold;
+}
+
+.border {
+  border: 1px solid var(--highlight);
+  border-radius: 15px;
+}
+
+.fix-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.fullscreen {
+  width: 100%;
+}
+
+.click-me {
+  background-color: var(--highlight);
+  color: var(--nav-text);
+}
+
+.click-me:hover {
+  filter: brightness(70%);
+}
+
+/** Blog post specific style rules */
+
+.column-1-3 {
+  position: relative;
+  width: 33%;
+  float: left;
+}
+
+.column-2-3 {
+  position: relative;
+  width: 66%;
+  float: left;
+}
+
+.column-3-3 {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+/** The whole post including title and body, but not tags or recent */
+#post-section {
+  position: relative;
+}
+
+.post-title {
+  font-family: var(--quote-text);
+  position: relative;
+  width: 85%;
+  height: 50px;
+  left: calc(15% / 2);
+}
+
+.post-body {
+  position: relative;
+  width: 85%;
+  left: calc(15% / 2);
+}
+
+/** The whole section of related content, but not the post itself */
+#post-sidebar {
+  position: relative;
+}
+
+.post-tags {
+  position:relative;
+  width: 85%;
+  left: calc(15% / 2);
+}
+
+.post-recent {
+  position: relative;
+  width: 85%;
+  left: calc(15% / 2);
+}

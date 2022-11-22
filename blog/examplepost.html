@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>huh, you've found a blog?</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="http://blog.mentallyobscure.org/veganish"><div class="navbar-button">Vegan...ish</div></a>
+    <a href="http://blog.mentallyobscure.org/writing"><div class="navbar-button">Writing</div></a>
+    <a href="http://blog.mentallyobscure.org/coding"><div class="navbar-button">Coding</div></a>
+    <!-- Everything below this goes from right to left too. Putting it in a div makes it go left to right again. -->
+    <a href="http://mentallyobscure.org"><div class="nav-title">Take me home!</div></a>
+  </div>
+
+  <div class="below-nav fix-center fullscreen">
+    <div class="fullscreen">
+      <h2>$(blogSectionTitle)</h2>
+      <h3>$(blogSectionDescription)</h3>
+      <hr/>
+      <div>
+        <div id="post-section" class="fix-center column-2-3">
+          <div class="fullscreen">
+            <div class="post-title fix-center">
+              $(blogPostTitle) ||| $(blogPostAuthor) <br/>
+              Posted: $(blogPostedDate) ||| Updated: $(blogUpdatedDate)
+            </div>
+            <br/>
+            <br/>
+            <div class="post-body fix-center">
+              $(blogPostBody)
+            </div>
+          </div>
+        </div>
+        <div id="post-sidebar" class="fix-center column-1-3">
+          <div class="fullscreen">
+            <div class="post-tags fix-center">
+              Look at related posts by tag!<br/>
+              $(blogPostTagsHTML)
+            </div>
+            <br/>
+            <br/>
+            <div class="post-recent fix-center">
+              Check out recent posts!<br/>
+              $(blogPostRecentRSS)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

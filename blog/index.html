@@ -1,0 +1,53 @@
+<!--
+Sections for school writing samples, coding projects, and other by tag.
+Load posts onto this page instead of loading new pages?
+Choose between markdown and plain code
+Find way for text highlighting of code; might need to write up stylesheet specifically for allowing code highlighting.
+Might work better to learn XSL and use that to write up pages properly
+Maybe add pages each time so they have their own URL and just use XML DOM to describe the layout
+Currently Wordpress is going to be removed from the site.
+Need an XML attribute to specify the date it was written (not time), even going backwards in time
+Perhaps a secondary time attribute that says the date it was posted, allowing for searching posts by time?
+Tags that describe the topic of the post
+Search by tag through posts by having a meta tag on each page created from the list of tags in the post XML data
+Show tags in the top title area underneath the title, then date originally finished and data posted below that,
+then the actual post below that.
+minimalistic, nothing to the sides during reading, and below can suggest other posts under tags the post matches
+if no others by that tag, a link to a list of all posts
+
+A script for server side that searches all the posts that haven't gotten an HTML file yet (page) and reports which ones need to be added.
+-->
+
+<html lang="en">
+
+<head>
+  <title>huh, you've found a blog?</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="http://blog.mentallyobscure.org/veganish"><div class="navbar-button">Vegan...ish</div></a>
+    <a href="http://blog.mentallyobscure.org/writing"><div class="navbar-button">Writing</div></a>
+    <a href="http://blog.mentallyobscure.org/coding"><div class="navbar-button">Coding</div></a>
+    <!-- Everything below this goes from right to left. Putting it in a div makes it go left to right again. -->
+    <a href="http://mentallyobscure.org"><div class="nav-title">Take me home!</div></a>
+  </div>
+
+  <div class="below-nav fix-center fullscreen">
+    <div>
+      <h2>This is the new structure for a blog, which will pull from an RSS feed that links to different blog posts and their descriptions from the last 10 posts. Other feeds will be separated by topic.</h2>
+      <h3>Will have code to run server side to translate each XML file into an HTML file.</h3>
+      <div id="latest-posts" class="fix-center fullscreen">
+        This text will be replaced when the RSS feed is created, updated, and read from by this page's code.<br/>
+        /veganish: pulls from /posts, posts are put in /recipes (recipes.rss)<br/>
+        /coding: pulls from /posts, posts are put in /projects (projects.rss)<br/>
+        /writing: pulls from /posts, posts are put in /works (works.rss)<br/>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Compare & Contrast Libraries - LIBS6010 - Elias</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../main.css" rel="stylesheet" />
+    <script src="../js/popup.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="http://ecu.mentallyobscure.org"><div class="navbar-button">ECU Portfolio</div></a>
+    <a href="http://mentallyobscure.org"><div class="navbar-button">Check out Elias' other projects!</div></a>
+  </div>
+
+  <div class="below-nav fix-center fullscreen">
+    <div>
+      <div class="row fix-center">
+        <h4><b>Click the below options to learn more!</b></h4>
+      </div>
+      <div class="row fix-center">
+        <div class="static-column border click-me" onclick="filler('governing')">
+          <div id="governing">
+            Who governs the library?
+          </div>
+        </div>
+        <div class="static-column border click-me" onclick="filler('director')">
+          <div id="director">
+            Who does a director report to?
+          </div>
+        </div>
+        <div class="static-column border click-me" onclick="filler('supports')">
+          <div id="supports">
+            What supports does the library require?
+          </div>
+        </div>
+        <div class="static-column border click-me" onclick="filler('goals')">
+          <div id="goals">
+            What is the library's goal?
+          </div>
+        </div>
+        <div class="static-column border click-me" onclick="filler('patrons')">
+          <div id="patrons">
+            Who does the library reach?
+          </div>
+        </div>
+        <div class="static-column border click-me" onclick="filler('materials')">
+          <div id="materials">
+            What does the library provide in materials?
+          </div>
+        </div>
+        <div class="static-column border click-me" onclick="filler('services')">
+          <div id="services">
+            What does the library provide as services?
+          </div>
+        </div>
+      </div>
+      <div class="row fix-center">
+        <div id="result-container">
+          <p id="which-button-clicked">Who governs the library?</p>
+          <div class="row fix-center">
+            <div>
+              <h1><center>School Libraries</center></h1>
+              <div id="K12" class="internal-column library-desc">
+                The school’s leadership; the district authorities; school boards
+              </div>
+            </div>
+          </div>
+          <div class="row fix-center spacer"></div>
+          <div class="row fix-center">
+            <div class="internal-column">
+              <h1><center>Public Libraries</center></h1>
+              <div id="public" class="library-desc">
+                The government that funds them, be it county, state, or other official government leadership
+              </div>
+            </div>
+            <div class="internal-column">
+              <h1><center>Academic Libraries</center></h1>
+              <div id="academic" class="library-desc">
+                report to administration and governing bodies (CARLI statement)
+              </div>
+            </div>
+          </div>
+          <div class="row fix-center spacer"></div>
+          <div class="row fix-center">
+            <div>
+              <h1><center>Comparing Libraries</center></h1>
+              <div id="compared" class="library-desc">
+                The government that funds them, be it county, state, or other official government leadership
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row fix-center spacer"></div>
+      <div class="row fix-center spacer"></div>
+      <div class="row fix-center">
+        <div>
+          <h1>Resources</h1>
+          <br/>
+          CARLI.  (2020, April). <i>The Importance of a Director in Charge of an Academic Library.</i> https://www.carli.illinois.edu/sites/files/files/CARLIStatementImportanceofDean-or-Director.pdf
+          <br/>
+          Rubin, R. E., & Rubin, R. G. (2020). Foundations of library and information science. American Library Association.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">filler("governing");</script>
+</body>
+
+</html>

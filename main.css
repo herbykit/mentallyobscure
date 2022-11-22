@@ -1,0 +1,164 @@
+/* Oxygen font family from Google Fonts, all styles */
+@font-face {
+  font-family: 'oxygenregular';
+  src: url('fonts/oxygen-regular.woff2') format('woff2'),
+    url('fonts/oxygen-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oxygenbold';
+  src: url('fonts/oxygen-bold.woff2') format('woff2'),
+    url('fonts/oxygen-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: bold;
+}
+
+/* Shadows into Light font family from Google Fonts, only normal */
+@font-face {
+  font-family: 'shadows_into_lightregular';
+  src: url('fonts/shadowsintolight-regular.woff2') format('woff2'),
+    url('fonts/shadowsintolight-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family:'Monocraft';
+    src: url('fonts/Monocraft.woff2') format('woff2'),
+		url('fonts/Monocraft.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FD;
+}
+
+:root {
+  --nav-primary: #312509;
+  --nav-secondary: #c69c72;
+  --body-primary: #b1f8f2;
+  --body-secondary: #046b76;
+  --color-pop: #8dB38b;
+  --default-num-columns: 3;
+  --primary-text: "oxygenregular";
+  --bold-text: "oxygenbold";
+  --quote-text: "shadows_into_lightregular";
+}
+
+.navbar {
+  position: fixed;
+  background-color: var(--nav-primary);
+  color: white;
+  z-index: -1;
+  height: 10%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  font-family: var(--bold-text);
+}
+
+.nav-title {
+  position: relative;
+  width: 100px;
+  height: 30%;
+  text-align: right;
+  left: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.navbar-button {
+  background-color: var(--nav-primary);
+  color: white;
+  width: 150px;
+  height: 100%;
+  float: right;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.navbar-button:hover {
+  filter: brightness(200%);
+  color: #a9a9a9;
+}
+
+.below-nav {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  left:0%;
+}
+
+body {
+  background-color: var(--body-primary);
+  color: black;
+  font-family: var(--primary-text);
+}
+
+b {
+  font-family: var(--bold-text);
+}
+
+a {
+  color: var(--color-pop);
+  text-decoration: none;
+  text-decoration-style: bold;
+}
+
+h1 h2 h3 h4 h5 h6 p {
+  color: black;
+}
+
+.black-text {
+  color: black;
+}
+
+.border {
+  border: 1px solid var(--color-pop);
+  border-radius: 15px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  width: 30%;
+  float: left;
+  position: relative;
+}
+
+.internal-column {
+  width: 95%;
+  margin: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.fix-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.click-me {
+  background-color: var(--color-pop);
+}
+
+.click-me:hover {
+  filter: brightness(70%);
+}

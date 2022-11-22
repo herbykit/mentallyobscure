@@ -1,0 +1,511 @@
+/* Oxygen font family from Google Fonts*/
+/* Shadows into Light font family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Shadows+Into+Light&display=swap');
+
+:root {
+  --nav-color: #171614;
+  --nav-text: white;
+  --nav-brightness: 90%;
+  --body-color: #553555;
+  --body-text: white;
+  --highlight: #755B69;
+  --foot-color: #171614;
+  --foot-text: white;
+  --default-num-columns: 3;
+  --primary-text: 'Oxygen', sans-serif;
+  --bold-text: 'Oxygen', sans-serif;
+  --quote-text: 'Shadows Into Light', cursive;
+}
+
+.navbar {
+  position: absolute;
+  background-color: var(--nav-color);
+  color: var(--nav-text);
+  height: 10%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  font-family: var(--bold-text);
+  font-style: bold;
+  display: inline-block;
+}
+
+.nav-title {
+  position: relative;
+  width: 400px;
+  height: 30%;
+  text-align: right;
+  left: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+#recommended-list {
+  height: 30px;
+  position: absolute;
+  width: 150px;
+  top: 100%;
+  right: calc(150px * 3);
+  z-index: 99;
+  display: none;
+}
+
+.navbar-button:hover + #recommended-list {
+  display: block;
+}
+
+#recommended-list:hover {
+  display: block;
+}
+
+#recommended-list-physical {
+  height: 30px;
+  position: absolute;
+  width: 150px;
+  right: calc(-150px);
+  z-index: 99;
+  display: none;
+}
+
+.navbar-button:hover + #recommended-list-physical {
+  display: block;
+}
+
+#recommended-list-physical:hover {
+  display: block;
+}
+
+
+#recommended-list-electronic {
+  height: 30px;
+  position: absolute;
+  width: 150px;
+  right: calc(-150px);
+  top: 100%;
+  z-index: 99;
+  display: none;
+}
+
+.navbar-button:hover + #recommended-list-electronic {
+  display: block;
+}
+
+#recommended-list-electronic:hover {
+  display: block;
+}
+
+.navbar-button {
+  background-color: var(--nav-color);
+  color: var(--nav-text);
+  width: 150px;
+  height: 100%;
+  float: right;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.navbar-button:hover {
+  filter: brightness(var(--nav-brightness));
+  color: #a9a9a9;
+}
+
+.below-nav {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  left:0%;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--body-text);
+  font-family: var(--primary-text);
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  color: inherit;
+}
+
+b {
+  font-family: var(--bold-text);
+  font-style: bold;
+}
+
+a {
+  color: var(--highlight);
+  text-decoration: none;
+  text-decoration-style: bold;
+}
+
+.border {
+  border: 1px solid var(--highlight);
+  border-radius: 15px;
+}
+
+.row {
+  width: 100%;
+}
+
+.spacer {
+  height: 50px;
+}
+
+.column {
+  width: 30%;
+  float: left;
+  position: relative;
+}
+
+.fat-button {
+  padding: 5px;
+}
+
+.internal-column {
+  width: 95%;
+  margin: 5%;
+}
+
+.static-column {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  min-height: 50px;
+  min-width: 100px;
+  padding: 5px;
+  margin: 5px;
+  border:1px solid black;
+}
+
+.fix-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.click-me {
+  background-color: var(--highlight);
+  color: var(--nav-text);
+}
+
+.click-me:hover {
+  filter: brightness(70%);
+}
+
+.fullscreen {
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom:0%;
+  left:0%;
+  height: calc(15px + 300px);
+  width: 100%;
+  font-family: var(--primary-text);
+  color: var(--foot-text);
+  background-color: var(--body-color);
+}
+
+/* Bookshelf specific code */
+
+#shelf {
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  bottom: 0px;
+  background-color: #5C4033;
+}
+
+.book {
+  position:relative;
+  overflow: none;
+  display:inline-block;
+  text-decoration: none;
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.center-text {
+  position: absolute;
+  height:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.book-wide {
+  width:70px;
+  background-color: red;
+}
+
+.book-average-wide {
+  width: 65px;
+  background-color: green;
+}
+
+.book-thin {
+  width:50px;
+  background-color: blue;
+}
+
+.book-short {
+  height:200px;
+  bottom: 0px;
+}
+
+.book-average-tall {
+  height: 250px;
+  bottom: 0px;
+}
+
+.book-tall {
+  height:300px;
+  bottom: 0px;
+}
+
+#ref-info-servs {
+  background-color: #07080C;
+}
+
+#apa-publication-manual {
+  background-image: url(https://i.imgur.com/zA505vS.png);
+}
+
+
+/* Module 1.3 specific code */
+#K12 {
+  color: black;
+  background-color: #BFCC94;
+}
+
+#public {
+  color: black;
+  background-color: #B4CDED;
+}
+
+#academic {
+  color: white;
+  background-color: #344966;
+}
+
+#compared {
+  color: white;
+  background-color: #A8763E;
+}
+
+.align-normal {
+  left:0%;
+  position:absolute;
+  display: inline-block;
+  float:left;
+  height: 100px;
+}
+
+.library-desc {
+  font-size: 16px;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  border-radius: 3px;
+  width: 400px;
+  height: 100%;
+}
+
+/* Screen Size accomodation */
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .navbar {
+    height: 40px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+
+  .nav-title {
+    width:250px;
+    font-size: 20px;
+    height:50%;
+    left:0px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+  }
+
+  #recommended-list {
+    height:100%;
+    width:120px;
+    top: 100%;
+    right: calc(120px * 3);
+  }
+
+  .navbar-button:active + #recommended-list {
+    display: block;
+  }
+
+
+  #recommended-list-physical {
+    height: 100%;
+    width: 120px;
+    right: -120px;
+  }
+
+  .navbar-button:active + #recommended-list-physical {
+    display: block;
+  }
+
+  #recommended-list-electronic {
+    height: 100%;
+    width: 120px;
+    right: -120px;
+  }
+
+  .navbar-button {
+    height: 100%;
+    width: 120px;
+  }
+
+  .below-nav {
+    top: 40px;
+    width: 100%;
+    left: 0%;
+    z-index: -1;
+  }
+
+  .column {
+    width: 45%;
+    padding: 2.5%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    text-align: center;
+  }
+
+  .footer {
+    bottom:0px;
+    left:0px;
+    height:calc(10px + 210px);
+    width:100%;
+  }
+
+
+  #shelf {
+    height:10px;
+    bottom:0%;
+  }
+
+  .center-text {
+    height:100%;
+    top: 50%;
+    left: 50%;
+  }
+
+  .book-short {
+    font-size: 14px;
+    height: 155px;
+    bottom: 0px;
+  }
+
+  .book-average-tall {
+    font-size: 14px;
+    height: 175px;
+    bottom: 0px;
+  }
+
+  .book-tall {
+    font-size: 14px;
+    height: 210px;
+    bottom: 0px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .navbar {
+    height: 80px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+
+  .nav-title {
+    width:200px;
+    font-size: 20px;
+    height:50%;
+    left:0px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+  }
+
+  #recommended-list {
+    height:100%;
+    width:120px;
+    top: 100%;
+    right: calc(0px);
+  }
+
+  .navbar-button:active + #recommended-list {
+    display: block;
+  }
+
+
+  #recommended-list-physical {
+    height: 100%;
+    width: 120px;
+    right: 120px;
+  }
+
+  .navbar-button:active + #recommended-list-physical {
+    display: block;
+  }
+
+  #recommended-list-electronic {
+    height: 100%;
+    width: 120px;
+    right: 120px;
+    top: 40px;
+  }
+
+  .navbar-button {
+    height: 50%;
+    width: 120px;
+  }
+
+  .below-nav {
+    top: 80px;
+    width: 100%;
+    left: 0%;
+    z-index: -1;
+  }
+
+  .column {
+    width: 45%;
+    padding: 2.5%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+  }
+
+  .row {
+    width: 95%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    text-align: center;
+  }
+}

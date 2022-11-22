@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt2html.xsl"?>
+
+<posts>
+  <post>
+    <blogSectionTitle>blog section title</blogSectionTitle>
+    <blogSectionDescription>blog section description</blogSectionDescription>
+    <blogPostTitle>blog post title</blogPostTitle>
+    <blogPostAuthor>blog post author</blogPostAuthor>
+    <blogPostedDate>blog posted date</blogPostedDate>
+    <blogUpdatedDate>blog updated date</blogUpdatedDate>
+    <blogPostBody>blog post body</blogPostBody>
+    <blogPostTagsHTML>
+      <tag>blog</tag>
+      <tag>post</tag>
+      <tag>in</tag>
+      <tag>html</tag>
+    </blogPostTagsHTML>
+    <blogPostRecentRSS>blog post recent rss</blogPostRecentRSS>
+  </post>
+</posts>

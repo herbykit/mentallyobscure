@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt2html.xsl"?>
+
+<posts>
+  <post>
+    <blogSectionTitle>Veganish</blogSectionTitle>
+    <blogSectionDescription>Dairy free, eggs optional, and reduced meat, all at your service!</blogSectionDescription>
+    <blogPostTitle>Vegan Alfredo Sauce, perfected</blogPostTitle>
+    <blogPostAuthor>Original: <a href="https://simpleveganblog.com/vegan-alfredo-sauce/">Simple Vegan Blog</a> | Adapted by herby</blogPostAuthor>
+    <blogPostedDate>10/10/2022</blogPostedDate>
+    <blogUpdatedDate>10/10/2022</blogUpdatedDate>
+    <blogPostBody>
+      <recipeItem>1 cup unsalted raw cashews (150 g)</recipeItem>
+      <recipeItem>1 tbsp vegan butter (can melt in sauce pan for blended ingredients to be mixed into after instead of all in the blender) or oil (extra virgin olive oil highly recommended)</recipeItem>
+      <recipeItem>1 tablespoon and one teaspoon of garlic powder</recipeItem>
+      <recipeItem>3/4 cup unsweetened oat or nut milk (do NOT use rice or soy milk with this)</recipeItem>
+      <recipeItem>1/4 cup nutritional yeast (4 tbsp)</recipeItem>
+      <recipeItem>1 tbsp lemon juice</recipeItem>
+      <recipeItem>1 tsp salt</recipeItem>
+      <recipeItem>half teaspoon of thyme (dried)</recipeItem>
+      <recipeItem>two teaspoons of oregano (dried)</recipeItem>
+      <recipeItem>two teaspoons of basil (dried)</recipeItem>
+      <recipeInstructions>Two strategies to cook: Hot water from sink, or boiling. Lazy, or faster?</recipeInstructions>
+      <recipeInstructions>Lazy: Put cashews in hot water from the sink fully submerged for half an hour to an hour</recipeInstructions>
+      <recipeInstructions>Faster: Put cashews in water and boil for 15 minutes.</recipeInstructions>
+      <recipeInstructions>Drain cashews and rinse them after they have been soaked the lazy or faster way.</recipeInstructions>
+      <recipeInstructions>Put all ingredients in blender, blend from lowest setting until it's consistent, moving up one setting at a time.</recipeInstructions>
+    </blogPostBody>
+    <blogPostTagsHTML>
+      <tag>vegan</tag>
+      <tag>cheese</tag>
+      <tag>cashew</tag>
+      <tag>italian</tag>
+    </blogPostTagsHTML>
+    <blogPostRecentRSS>The first post?!</blogPostRecentRSS>
+  </post>
+</posts>
