@@ -35,11 +35,9 @@
           <a class="navbar-button" href="http://ecu.mentallyobscure.org/6014/search.html">Research Methods</a>
           <a class="navbar-button" href="http://ecu.mentallyobscure.org/6014">Home</a>
         </div>
-        <div>
+        <div class="below-nav">
           <div class="row fix-center">
             <h4><b>Mental Illness: The Research on Developmental Trauma - a guide</b></h4>
-          </div>
-          <div class="row fix-center spacer"></div>
 
 
         </div>

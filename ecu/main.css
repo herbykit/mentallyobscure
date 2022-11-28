@@ -128,13 +128,20 @@ body {
   font-family: var(--primary-text);
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6 {
+  color: var(--nav-color);
+  filter: brightness(75%);
+}
+
+p, a {
   color: inherit;
 }
 
 b {
   font-family: var(--bold-text);
   font-style: bold;
+  color: var(--nav-color);
+  filter: brightness(75%);
 }
 
 a {
@@ -158,6 +165,7 @@ a {
 
 .column {
   width: 30%;
+  padding: 1.5%;
   float: left;
   position: relative;
 }
@@ -168,7 +176,7 @@ a {
 
 .internal-column {
   width: 95%;
-  margin: 5%;
+  margin: 2.5%;
 }
 
 .static-column {

@@ -2,4 +2,11 @@
 <?xml-stylesheet type="text/xsl" href="../../xslt2html_6014_resources.xsl"?>
 
 <resources>
+  <item>
+    <name>Database</name>
+    <link></link>
+    <tags>
+      <tag>type</tag>
+      <tag>type 2</tag>
+  </item>
 </resources>
