@@ -38,8 +38,7 @@
         <div class="below-nav">
           <div class="row fix-center">
             <h4><b>Mental Illness: The Research on Developmental Trauma - a guide</b></h4>
-
-
+				  </div>
         </div>
       </body>
     </html>

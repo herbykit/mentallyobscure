@@ -118,7 +118,7 @@
 .below-nav {
   position: absolute;
   top: 10vh;
-  width: 100vw;
+  width: 100%;
   left:0%;
 }
 
@@ -152,13 +152,6 @@ a {
   text-decoration-style: bold;
 }
 
-table {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90vw;
-}
-
 iframe {
   max-width: 40vw;
   padding: 1vw;
@@ -166,6 +159,7 @@ iframe {
 
 .desktop {
   display:block;
+
 }
 
 .mobile {
@@ -216,6 +210,7 @@ iframe {
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: stretch;
 }
 
 .click-me {
@@ -229,6 +224,7 @@ iframe {
 
 .fullscreen {
   width: 95vw;
+  left: 5vw;
 }
 
 .footer {

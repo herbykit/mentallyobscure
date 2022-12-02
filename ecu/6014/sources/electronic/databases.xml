@@ -3,10 +3,61 @@
 
 <resources>
   <item>
-    <name>Database</name>
+    <name>psychotherapy.net</name>
+    <link>https://ezproxy.davidsondavie.edu/login?url=https://www.psychotherapy.net/stream/davidsondavie</link>
+    <tags>
+      <tag>psychology</tag>
+    </tags>
+  </item>
+  <item>
+    <name>PubMed.gov</name>
+    <link>https://pubmed.ncbi.nlm.nih.gov/</link>
+    <tags>
+      <tag>medical</tag>
+      <tag>neuroscience</tag>
+    </tags>
+  </item>
+  <item>
+    <name>JSTOR</name>
+    <link>https://ezproxy.davidsondavie.edu/login?url=http://www.jstor.org</link>
+    <tags>
+      <tag>psychology</tag>
+      <tag>neuroscince</tag>
+    </tags>
+  </item>
+  <item>
+    <name>Proquest Central</name>
     <link></link>
     <tags>
-      <tag>type</tag>
-      <tag>type 2</tag>
+      <tag></tag>
+    </tags>
+  </item>
+  <item>
+    <name>CINAHL Plus Text</name>
+    <link></link>
+    <tags>
+      <tag></tag>
+    </tags>
+  </item>
+  <item>
+    <name>Google Scholar</name>
+    <link></link>
+    <tags>
+      <tag></tag>
+    </tags>
+  </item>
+  <item>
+    <name>Masterfile Premier</name>
+    <link></link>
+    <tags>
+      <tag></tag>
+    </tags>
+  </item>
+  <item>
+    <name>nda.nih.gov/</name>
+    <link></link>
+    <tags>
+      <tag></tag>
+    </tags>
   </item>
 </resources>
