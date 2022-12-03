@@ -48,6 +48,7 @@
 								    <xsl:value-of select="name"/>
 									</xsl:element>
 								</h2>
+								<p><xsl:copy-of select="description" /></p>
 								<xsl:for-each select="tags/tag">
 									<p class="tag"><xsl:copy-of select="." /></p>
 								</xsl:for-each>
