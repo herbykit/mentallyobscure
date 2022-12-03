@@ -5,7 +5,7 @@
   <item>
     <name>psychotherapy.net</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=https://www.psychotherapy.net/stream/davidsondavie</link>
-    <description></description>
+    <description>A database providing video seminars on many topics, including that of developmental psychology and trauma.</description>
     <tags>
       <tag> psychology </tag>
     </tags>
@@ -13,7 +13,7 @@
   <item>
     <name>PubMed.gov</name>
     <link>https://pubmed.ncbi.nlm.nih.gov/</link>
-    <description></description>
+    <description>The National Library of Medicine provides listings of articles from biomedial literature across many sources.</description>
     <tags>
       <tag> medical </tag>
       <tag> neuroscience </tag>
@@ -22,7 +22,7 @@
   <item>
     <name>JSTOR</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=http://www.jstor.org</link>
-    <description></description>
+    <description>JSTOR is a database with a awide variety of subjects covered, including psychological- and neuroscience-focused research on developmental trauma.</description>
     <tags>
       <tag> psychology </tag>
       <tag> neuroscience </tag>
@@ -31,7 +31,7 @@
   <item>
     <name>Proquest Central</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=https://resources.nclive.org/PQcentral</link>
-    <description></description>
+    <description>Proquest Central collects many articles and resources across many subject areas.</description>
     <tags>
       <tag> general </tag>
       <tag> psychology </tag>
@@ -41,7 +41,7 @@
   <item>
     <name>CINAHL Plus with Full Text</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=https://resources.nclive.org/cinahl</link>
-    <description></description>
+    <description>CINAHL Plus is a database focused on medical perspectives, including psychological and neuroscience ones.</description>
     <tags>
       <tag> medical </tag>
       <tag> neuroscience </tag>
@@ -51,7 +51,7 @@
   <item>
     <name>Google Scholar</name>
     <link>https://scholar.google.com/</link>
-    <description></description>
+    <description>Google Scholar is a search engine designed to find research articles.</description>
     <tags>
       <tag> general </tag>
     </tags>
@@ -59,7 +59,7 @@
   <item>
     <name>Masterfile Premier</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=https://resources.nclive.org/masterfile</link>
-    <description></description>
+    <description>Masterfile Premier covers general subject areas, with some results for developmental trauma.</description>
     <tags>
       <tag> general </tag>
       <tag>medical </tag>
@@ -69,7 +69,7 @@
   <item>
     <name>nda.nih.gov</name>
     <link>https://nda.nih.gov/</link>
-    <description></description>
+    <description>The National Institute of Mental Health Data Archive provides data for research on mental health and illness topics.</description>
     <tags>
       <tag> data </tag>
       <tag> medical </tag>

@@ -3,13 +3,24 @@
 
 <resources>
   <item>
-    <name></name>
-    <link></link>
-    <description></description>
+    <name>Dr. Bessel van der Kolk</name>
+    <description>This researcher has written and done research on trauma, with his most well known book, "The Body Keeps the Score".</description>
   </item>
-  Dr. Lenore Terr
-  Dr. Bessel van der Kolk
-  Dr. Julian Ford
-  Dr. Joseph Spinazzola
-  Thanos Karatzias
+  <item>
+    <name>Dr. Lenore Terr</name>
+    <description>This researcher focuses largely on childhood trauma.</description>
+  </item>
+  <item>
+    <name>Dr. Julian Ford</name>
+    <description>This researcher focuses heavily on assessment and treatment of trauma disorders, and has participated in research alongside Dr. Bessel van der Kolk and Dr. Joseph Spinazzola.</description>
+  </item>
+  <item>
+    <name>Dr. Joseph Spinazzola</name>
+    <description>This researcher focuses on treatment and the research on traumatic stress.</description>
+  </item>
+  <item>
+    <name>complextrauma.org</name>
+    <link>https://www.complextrauma.org/about-us/</link>
+    <description>This resource gives general information about complex trauma, of which developmental trauma has some overlap.</description>
+  </item>
 </resources>
