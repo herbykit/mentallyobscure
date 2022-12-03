@@ -5,6 +5,7 @@
   <item>
     <name>psychotherapy.net</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=https://www.psychotherapy.net/stream/davidsondavie</link>
+    <description></description>
     <tags>
       <tag> psychology </tag>
     </tags>
@@ -12,6 +13,7 @@
   <item>
     <name>PubMed.gov</name>
     <link>https://pubmed.ncbi.nlm.nih.gov/</link>
+    <description></description>
     <tags>
       <tag> medical </tag>
       <tag> neuroscience </tag>
@@ -20,6 +22,7 @@
   <item>
     <name>JSTOR</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=http://www.jstor.org</link>
+    <description></description>
     <tags>
       <tag> psychology </tag>
       <tag> neuroscience </tag>
@@ -28,6 +31,7 @@
   <item>
     <name>Proquest Central</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=https://resources.nclive.org/PQcentral</link>
+    <description></description>
     <tags>
       <tag> general </tag>
       <tag> psychology </tag>
@@ -37,6 +41,7 @@
   <item>
     <name>CINAHL Plus with Full Text</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=https://resources.nclive.org/cinahl</link>
+    <description></description>
     <tags>
       <tag> medical </tag>
       <tag> neuroscience </tag>
@@ -46,6 +51,7 @@
   <item>
     <name>Google Scholar</name>
     <link>https://scholar.google.com/</link>
+    <description></description>
     <tags>
       <tag> general </tag>
     </tags>
@@ -53,6 +59,7 @@
   <item>
     <name>Masterfile Premier</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=https://resources.nclive.org/masterfile</link>
+    <description></description>
     <tags>
       <tag> general </tag>
       <tag>medical </tag>
@@ -60,8 +67,9 @@
     </tags>
   </item>
   <item>
-    <name>nda.nih.gov/</name>
+    <name>nda.nih.gov</name>
     <link>https://nda.nih.gov/</link>
+    <description></description>
     <tags>
       <tag> data </tag>
       <tag> medical </tag>

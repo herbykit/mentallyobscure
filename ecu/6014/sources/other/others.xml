@@ -2,7 +2,11 @@
 <?xml-stylesheet type="text/xsl" href="../../xslt2html_6014_resources.xsl"?>
 
 <resources>
-
+  <item>
+    <name></name>
+    <link></link>
+    <description></description>
+  </item>
   Dr. Lenore Terr
   Dr. Bessel van der Kolk
   Dr. Julian Ford
