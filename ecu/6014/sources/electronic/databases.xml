@@ -6,58 +6,66 @@
     <name>psychotherapy.net</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=https://www.psychotherapy.net/stream/davidsondavie</link>
     <tags>
-      <tag>psychology</tag>
+      <tag> psychology </tag>
     </tags>
   </item>
   <item>
     <name>PubMed.gov</name>
     <link>https://pubmed.ncbi.nlm.nih.gov/</link>
     <tags>
-      <tag>medical</tag>
-      <tag>neuroscience</tag>
+      <tag> medical </tag>
+      <tag> neuroscience </tag>
     </tags>
   </item>
   <item>
     <name>JSTOR</name>
     <link>https://ezproxy.davidsondavie.edu/login?url=http://www.jstor.org</link>
     <tags>
-      <tag>psychology</tag>
-      <tag>neuroscince</tag>
+      <tag> psychology </tag>
+      <tag> neuroscience </tag>
     </tags>
   </item>
   <item>
     <name>Proquest Central</name>
-    <link></link>
+    <link>https://ezproxy.davidsondavie.edu/login?url=https://resources.nclive.org/PQcentral</link>
     <tags>
-      <tag></tag>
+      <tag> general </tag>
+      <tag> psychology </tag>
+      <tag> medical </tag>
     </tags>
   </item>
   <item>
-    <name>CINAHL Plus Text</name>
-    <link></link>
+    <name>CINAHL Plus with Full Text</name>
+    <link>https://ezproxy.davidsondavie.edu/login?url=https://resources.nclive.org/cinahl</link>
     <tags>
-      <tag></tag>
+      <tag> medical </tag>
+      <tag> neuroscience </tag>
+      <tag> psychology </tag>
     </tags>
   </item>
   <item>
     <name>Google Scholar</name>
-    <link></link>
+    <link>https://scholar.google.com/</link>
     <tags>
-      <tag></tag>
+      <tag> general </tag>
     </tags>
   </item>
   <item>
     <name>Masterfile Premier</name>
-    <link></link>
+    <link>https://ezproxy.davidsondavie.edu/login?url=https://resources.nclive.org/masterfile</link>
     <tags>
-      <tag></tag>
+      <tag> general </tag>
+      <tag>medical </tag>
+      <tag> psychology </tag>
     </tags>
   </item>
   <item>
     <name>nda.nih.gov/</name>
-    <link></link>
+    <link>https://nda.nih.gov/</link>
     <tags>
-      <tag></tag>
+      <tag> data </tag>
+      <tag> medical </tag>
+      <tag> psychology </tag>
     </tags>
   </item>
 </resources>

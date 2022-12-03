@@ -2,8 +2,24 @@
 <?xml-stylesheet type="text/xsl" href="../../xslt2html_6014_resources.xsl"?>
 
 <resources>
-  
-  The National Child Traumatic Stress Network
-  International Society for Traumatic Stress Studies
-  https://www.cttntraumatraining.org/faculty.html
+  <item>
+    <name>The National Child Traumatic Stress Network</name>
+    <link>https://www.nctsn.org/about-us/who-we-are</link>
+  </item>
+  <item>
+    <name>International Society for Traumatic Stress Studies</name>
+    <link>https://istss.org/about-istss</link>
+  </item>
+  <item>
+    <name>complextrauma.org</name>
+    <link>https://www.complextrauma.org/about-us/</link>
+  </item>
+  <item>
+    <name>Complex Trauma Treament Network</name>
+    <link>https://www.cttntraumatraining.org/faculty.html</link>
+  </item>
+  <item>
+    <name>Break The Stigma</name>
+    <link>https://www.breakthestigma.org/clarity</link>
+  </item>
 </resources>

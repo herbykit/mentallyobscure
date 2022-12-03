@@ -243,7 +243,6 @@ td {
   display: flex;
   justify-content: center;
   text-align: center;
-  align-items: stretch;
 }
 
 .click-me {
@@ -375,6 +374,21 @@ td {
   border-radius: 3px;
   width: 400px;
   height: 100%;
+}
+
+/* Tag specific code for 6014 Pathfinder */
+.tag {
+  display: inline-block;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  border-radius: 75px;
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
+  margin: 5px;
+  padding: 5px;
+  color: var(--body-text);
+  font-family: var(--quote-text);
+  font-size: 24px;
 }
 
 /* Screen Size accomodation */

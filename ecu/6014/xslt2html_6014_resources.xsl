@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:preserve-space elements="blogPostBody blogPostTagsHTML blogPostRecentRSS"/>
 	<xsl:template match="/resources">
     <html lang="en">
       <head>
@@ -38,7 +37,24 @@
           <div class="row fix-center">
             <h4><b>Mental Illness: The Research on Developmental Trauma - a guide</b></h4>
 				  </div>
-        </div>
+					<xsl:for-each select="item">
+						<div class="fix-center">
+							<div class="row">
+								<h2>
+									<xsl:element name="a">
+								    <xsl:attribute name="href">
+								        <xsl:value-of select="link"/>
+								    </xsl:attribute>
+								    <xsl:value-of select="name"/>
+									</xsl:element>
+								</h2>
+								<xsl:for-each select="tags/tag">
+									<p class="tag"><xsl:copy-of select="." /></p>
+								</xsl:for-each>
+							</div>
+						</div>
+					</xsl:for-each>
+				</div>
       </body>
     </html>
   </xsl:template>
