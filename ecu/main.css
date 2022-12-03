@@ -27,7 +27,7 @@
   height: 10vh;
   width: 100vw;
   top: 0%;
-  left: 0%;s
+  left: 0%;
 }
 
 .nav-title {
@@ -172,7 +172,17 @@ thead {
   filter: var(--nav-brightness);
 }
 
+.thead {
+  color: var(--nav-text);
+  filter: brightness(100%);
+}
+
+tr {
+  color: inherit;
+}
+
 td {
+  color: inherit;
   border-top: 1px dotted var(--nav-color);
   border-right: 1px dotted var(--nav-color);
   padding-top: 0px;
