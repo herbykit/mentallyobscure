@@ -37,8 +37,8 @@
             <h4><b>Mental Illness: The Research on Developmental Trauma - a guide</b></h4>
 				  </div>
 					<xsl:for-each select="item">
-						<div class="fix-center">
-							<div class="row">
+						<div class="fix-center desktop">
+							<div class="row desktop">
 								<h2>
 									<xsl:element name="a">
 								    <xsl:attribute name="href">
@@ -48,6 +48,26 @@
 									</xsl:element>
 								</h2>
 								<p><xsl:copy-of select="description" /></p>
+								<xsl:for-each select="tags/tag">
+									<p class="tag"><xsl:copy-of select="." /></p>
+								</xsl:for-each>
+							</div>
+						</div>
+						<div class="fix-center mobile">
+							<div class="row mobile">
+								<h2>
+									<xsl:element name="a">
+								    <xsl:attribute name="href">
+								        <xsl:value-of select="link"/>
+								    </xsl:attribute>
+								    <xsl:value-of select="name"/>
+									</xsl:element>
+								</h2>
+							</div>
+							<div class="row mobile">
+								<p><xsl:copy-of select="description" /></p>
+							</div>
+							<div class="row mobile">
 								<xsl:for-each select="tags/tag">
 									<p class="tag"><xsl:copy-of select="." /></p>
 								</xsl:for-each>

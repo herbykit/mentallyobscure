@@ -606,4 +606,12 @@ td {
     align-items: center; /* align vertical */
     text-align: center;
   }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
 }
