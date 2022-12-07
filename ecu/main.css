@@ -389,6 +389,11 @@ td {
   color: var(--body-text);
   font-family: var(--quote-text);
   font-size: 24px;
+  min-width: 50px;
+}
+
+.item {
+  display: none;
 }
 
 /* Screen Size accomodation */
@@ -519,6 +524,14 @@ td {
     font-size: 14px;
     height: 210px;
     bottom: 0px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 }
 
