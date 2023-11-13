@@ -1,20 +1,15 @@
-This is a portfolio website used to share and explore different things herby works on as small projects, including some graduate school assignments and projects.
+This originated as a website portfolio for herby, but developed into an ongoing project where they could create prototypes and finalise those prototypes to be useful tools for those dealing with mental illness and neurodevelopmental challenges.
 
-It is designed with the intention of understanding the backbone of how each language used works, with high focus on Javascript, XSL, and CSS.
+A wide variety of languages and tools are used for this website - HTML, CSS, and JS are essential, but JSON, XML, XSL, and some other languages are used in regards to what the specific task needs the ability to complete. Due to working fulltime, herby will slowly develop this resource alongside creating a clear wiki which explains the process used to create these tools - documentation is essential to enabling a project to continue years down the road.
 
-# [Homepage](http://mentallyobscure.org)
+# [Homepage](https://mentallyobscure.org)
 This page uses no XML, and redirects to each other page. It purposely doesn't link to the ECU portfolio part of the website, but the ECU subdomain links back to the homepage.
 
-# [Blog](http://blog.mentallyobscure.org)
-This subdomain will use both Javascript and XML + XSL for providing the pages. Backend code will be used to generate RSS feeds for the different sections of the blog.
-
-Still determining if actual posts will be hosted on Github in addition to on the site's server itself.
-
-# [Styleguides](http://style.mentallyobscure.org)
-This subdomain is a personalised guide to three common styleguides - mainly intended for use for graduate school projects, but preferably organised a bit more clearly than other styleguide websites for those who mainly use electronic resources.
-
-# [Planner](http://plan.mentallyobscure.org)
-This subdomain is a project on pause that is primarily focused on storing recipes and managing kitchen supplies. [Originally written in Javascript](https://github.com/herbykit/planner), it needs to be rewritten to store saved data in XML for readibility.
-
-# [ECU](http://ecu.mentallyobscure.org)
+# [ECU](https://ecu.mentallyobscure.org)
 This subdomain is a website that contains all of the graduate school projects I've been able to turn into website form, where I practice using skills I learn in the other projects I do in a more efficient manner.
+
+# [ADHD](https://adhd.mentallyobscure.org)
+This subdomain contains my projects related to managing ADHD - currently, this only has the framework for an ADHD task management tool where users can collect colours as rewards for their effort.
+
+# [Bag](https://bag.mentallyobscure.org)
+This subdomain contains a collection of coping resources that is currently hosting a "Values Sort" tool designed by W.R. Miller, J. C’de Baca, D.B. Matthews, P.L. Wilbourne, University of New Mexico, 2001. In the future, it will contain a wide selection of various coping skills, tools, and guides, for those managing their mental illness.
