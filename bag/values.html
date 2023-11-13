@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <head>
+        <title>Values Filter</title>
+        <link rel="stylesheet" href="values.css" />
+        <script type="text/javascript">
+            fetch("./values.json") 
+                .then((res) => res.json())
+                .then(data => {
+                    console.log(data);
+                    for (var i=0; i<Object.keys(data).length -1; i++) {
+                        console.log(Object.keys(data)[i]);
+                    
+                        var current = Object.keys(data)[i];
+
+                        newElement = document.createElement("div");
+                        
+                        newElement.id = current;
+                        
+                        newElement.setAttribute("class", "valueitem");
+
+                        newElement.setAttribute("contenteditable","false");
+
+                        newElement.setAttribute("draggable","true");
+                    
+                        newElement.setAttribute("onclick","return tappedItem(event)");
+
+                        newElement.setAttribute("ondragstart","return dragStart(event)");
+
+                        newElement.innerHTML = '<h5>' + current + '</h5><h6 class="desc">' + Object.values(data)[i] + '</h6>';
+                    
+                        document.getElementById("unlabelled").appendChild(newElement);
+                    }});
+        </script>
+
+        <script type="text/javascript">
+            function dragStart(event) {
+                event.dataTransfer.effectAllowed = 'move';
+                event.dataTransfer.setData("item", event.target.getAttribute('id'));
+                return true;
+            }
+
+            function dragEnter(event) {
+                event.preventDefault();
+                console.log("entered something");
+                return true;
+            }
+
+            function dragEnd(event, category) {
+                var source = event.dataTransfer.getData("item");
+                console.log("it ended.");
+                category.appendChild(document.getElementById(source));
+                event.stopPropagation();
+                return false;
+            }
+
+            function tappedItem(event) {
+                if (event.target.getAttribute('id') == null) {
+                    sessionStorage.setItem("item", event.target.parentElement.getAttribute("id"));
+                    sessionStorage.setItem("last-column", event.target.parentElement.parentElement.getAttribute("id"));
+                } else {
+                    sessionStorage.setItem("item", event.target.getAttribute('id'));
+                    sessionStorage.setItem("last-column", event.target.parentElement.getAttribute("id"));
+                }
+                console.log(sessionStorage.getItem("item"));
+                return true;
+            }
+
+            function tappedColumn(event, columnName, columnObject) {
+                if (sessionStorage.getItem("last-column") == columnName) {
+                    console.log(sessionStorage.getItem("last-column"));
+                    console.log(columnName);
+                    return false;
+                }
+                if(sessionStorage.getItem("item") == null) {
+                    return false;
+                }
+                columnObject.appendChild(document.getElementById(sessionStorage.getItem("item")));
+                sessionStorage.removeItem("item");
+                sessionStorage.removeItem("last-column");
+                return true;
+            }
+
+            function hideDescs(event, column) {
+                if (event.target.className != "title") {
+                    return false;
+                }
+                let descriptions = document.getElementById(column).querySelectorAll(".desc"); 
+                let shown = true;
+                if (descriptions[0].style.display == "none") {
+                    shown = false;
+                }
+                descriptions.forEach(function (currentValue, index, array) {
+                    if (!shown) {
+                        currentValue.style.display = "";
+                        console.log("show");
+                    } else {
+                        currentValue.style.display = "none";
+                        console.log("hide");
+                    }
+                });
+                return true;
+            }
+            
+            function clearitem() {
+                sessionStorage.removeItem("item");
+                console.log("item should be gone");
+            }
+        </script>
+    </head>
+    <body onload="clearitem()">
+        <div class="sidescroll">
+            <div class="top-bar">
+                <div class="title" ondblclick="hideDescs(event, 'unlabelled')">Unlabelled</div>
+                <div class="title" ondblclick="hideDescs(event, 'unimportant')">Not Important To Me</div>
+                <div class="title" ondblclick="hideDescs(event, 'lowimportant')">Somewhat Important to Me</div>
+                <div class="title" ondblclick="hideDescs(event, 'important')">Important to Me</div>
+                <div class="title" ondblclick="hideDescs(event, 'highimportant')">Very Important to Me</div>
+                <div class="title" ondblclick="hideDescs(event, 'mostimportant')">Most Important to Me</div>
+                <div class="title" ondblclick="hideDescs(event, 'other1')" contenteditable="true" >Enter category?</div>
+                <div class="title" ondblclick="hideDescs(event, 'other2')" contenteditable="true" >Enter category?</div>
+                <div class="title" ondblclick="hideDescs(event, 'other3')" contenteditable="true" >Enter category?</div>
+            </div>
+            <div class="container" onclick="tappedColumn(event, 'unlabelled', this)" ondragover="return dragEnter(event)" ondrop="return dragEnd(event, this)" id="unlabelled">
+                <!-- all items are first loaded into here. -->
+            </div>
+            <div class="container" onclick="tappedColumn(event, 'unimportant', this)" ondragover="return dragEnter(event)" ondrop="return dragEnd(event, this)" id="unimportant">
+            </div>
+            <div class="container" onclick="tappedColumn(event, 'lowimportant', this)" ondragover="return dragEnter(event)" ondrop="return dragEnd(event, this)" id="lowimportant">
+            </div>
+            <div class="container" onclick="tappedColumn(event, 'important', this)" ondragover="return dragEnter(event)" ondrop="return dragEnd(event, this)" id="important">
+            </div>
+            <div class="container" onclick="tappedColumn(event, 'highimportant', this)" ondragover="return dragEnter(event)" ondrop="return dragEnd(event, this)" id="highimportant">
+            </div>
+            <div class="container" onclick="tappedColumn(event, 'mostimportant', this)" ondragover="return dragEnter(event)" ondrop="return dragEnd(event, this)" id="mostimportant">
+            </div>
+            <div class="container" onclick="tappedColumn(event, 'other1', this)" ondragover="return dragEnter(event)" ondrop="return dragEnd(event, this)" id="other1">
+            </div>
+            <div class="container" onclick="tappedColumn(event, 'other2', this)" ondragover="return dragEnter(event)" ondrop="return dragEnd(event, this)" id="other2">
+            </div>
+            <div class="container" onclick="tappedColumn(event, 'other3', this)" ondragover="return dragEnter(event)" ondrop="return dragEnd(event, this)" id="other3">
+            </div>
+        </div>
+    </body>
+</html>

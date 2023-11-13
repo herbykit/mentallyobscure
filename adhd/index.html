@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>ADHD</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="main.css" rel="stylesheet" />
+        <script type="text/javascript">
+            function toggleButtons() {
+                var navbuttons = document.getElementsByClassName("navbar-button-mobile");
+                // add "hidden" class to all navbar-button-mobile if they are not hidden or remove if they are
+                for (let i = 0; i < navbuttons.length; i++) {
+                    if(navbuttons[i].classList.contains("hidden")) {
+                        navbuttons[i].classList.remove("hidden");
+                    } else {
+                        navbuttons[i].classList.add("hidden");
+                    }
+                }
+            }
+        </script>
+</head>
+    <body>
+        <div class="navbar-desktop">
+            <div class="nav-title-desktop"><a href="https://adhd.mentallyobscure.org/">ADHD</a></div>
+            <div class="navbar-button-desktop scrapbook-star">✩</div>
+            <div class="navbar-button-desktop">SHOP</div>
+            <div class="navbar-button-desktop">TO-DO</div>
+            <div class="navbar-button-desktop">PROGRESS</div>
+        </div>
+        <div class="navbar-mobile" onclick="toggleButtons()">
+            《 MENU 》
+            <div class="navbar-button-mobile hidden"><a href="https://adhd.mentallyobscure.org/">ADHD</a></div>
+            <div class="navbar-button-mobile hidden">PROGRESS</div>
+            <div class="navbar-button-mobile hidden">TO-DO</div>
+            <div class="navbar-button-mobile hidden">SHOP</div>
+            <div class="navbar-button-mobile hidden scrapbook-star">✩</div>
+        </div>
+        <div class="below-nav">
+            <div class="main-container">
+                <h1>This is left aligned in the center of the page, 5% away from both left and right edges, and allows for overflow into below the viewport area.</h1>
+                <ol>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>

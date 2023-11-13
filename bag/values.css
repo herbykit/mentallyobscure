@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+div {
+    background-color: darkslategray;
+    color:bisque;
+}
+
+.sidescroll {
+    z-index: 0;
+    position: absolute;
+}
+
+.top-bar {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: inline-flex;
+    position:sticky;
+    margin: 0;
+}
+
+.container {
+    width: 250px;
+    height: 100vh;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    overflow-y: auto;
+}
+
+.title {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    width: 250px;
+    height: fit-content;
+}
+
+.valueitem {
+    border: 5px solid blue;
+    text-align: center;
+    vertical-align: center;
+    margin: 0px 0px 0px 0px;
+}

@@ -1,0 +1,194 @@
+/* Oxygen font family from Google Fonts, all styles */
+@font-face {
+    font-family: 'oxygenregular';
+    src: url('fonts/oxygen-regular.woff2') format('woff2'),
+      url('fonts/oxygen-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'oxygenbold';
+    src: url('fonts/oxygen-bold.woff2') format('woff2'),
+      url('fonts/oxygen-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: bold;
+  }
+  
+  /* Shadows into Light font family from Google Fonts, only normal */
+  @font-face {
+    font-family: 'shadows_into_lightregular';
+    src: url('fonts/shadowsintolight-regular.woff2') format('woff2'),
+      url('fonts/shadowsintolight-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+      font-family:'Monocraft';
+      src: url('fonts/Monocraft.woff2') format('woff2'),
+          url('fonts/Monocraft.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      unicode-range: U+0020-00FD;
+  }
+  
+  :root {
+    --nav-primary: #312509;
+    --nav-secondary: #c69c72;
+    --body-primary: #b1f8f2;
+    --body-secondary: #046b76;
+    --color-pop: #8dB38b;
+    --default-num-columns: 3;
+    --primary-text: "oxygenregular";
+    --bold-text: "oxygenbold";
+    --quote-text: "shadows_into_lightregular";
+    --nav-font-size: 24px;
+  }
+  
+  .navbar-desktop {
+    position: fixed;
+    background-color: var(--nav-primary);
+    color: white;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    font-family: var(--bold-text);
+    font-size: var(--nav-font-size);
+  }
+  
+  .nav-title-desktop {
+    float: left;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-button-desktop {
+    float: right;
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-button-desktop:hover {
+    filter: brightness(200%);
+    color: #a9a9a9;
+  }
+
+  .scrapbook-star {
+    position: relative;
+    top: 5px;
+    width: 50px;
+    font-size: 28px;
+  }
+  
+  .navbar-mobile {
+    position: fixed;
+    background-color: var(--nav-primary);
+    color: white;
+    z-index: 1;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    font-family: var(--bold-text);
+    font-size: var(--nav-font-size);
+  }
+
+  .navbar-button-mobile {
+    background-color: var(--nav-primary);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media screen and (max-width: 700px) {
+    .navbar-button-desktop { display: none; }
+    .nav-title-desktop { display: none; }
+    .navbar-desktop { display: none; }
+    .scrapbook-star { top: 0%; }
+  }
+
+  @media screen and (min-width: 700px) {
+    .navbar-button-mobile { display: none; }
+    .navbar-mobile { display: none; }
+  }
+
+  .below-nav {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    left:0%;
+  }
+
+  .main-container {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    background-color: inherit;
+    color: inherit;
+    height: fit-content;
+    overflow:   scroll;
+  }
+  
+  body {
+    background-color: var(--body-primary);
+    color: black;
+    font-family: var(--primary-text);
+  }
+  
+  b {
+    font-family: var(--bold-text);
+  }
+  
+  a {
+    color: var(--color-pop);
+    text-decoration: none;
+    text-decoration-style: bold;
+  }
+  
+  h1 h2 h3 h4 h5 h6 p {
+    color: black;
+  }
+  
+  .black-text {
+    color: black;
+  }
+  
+  .border {
+    border: 1px solid var(--color-pop);
+    border-radius: 15px;
+  }
+  
+  .fix-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .click-me {
+    background-color: var(--color-pop);
+  }
+  
+  .click-me:hover {
+    filter: brightness(70%);
+  }
+  
