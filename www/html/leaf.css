@@ -8,6 +8,7 @@
   width: 50px;
   height: 40px;
   border-radius: 5px 145px 25px 150px;
+  z-index: 1;
 }
 
 .leaf:before {

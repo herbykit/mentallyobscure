@@ -1,38 +1,5 @@
-/* Oxygen font family from Google Fonts, all styles */
-@font-face {
-  font-family: 'oxygenregular';
-  src: url('fonts/oxygen-regular.woff2') format('woff2'),
-    url('fonts/oxygen-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'oxygenbold';
-  src: url('fonts/oxygen-bold.woff2') format('woff2'),
-    url('fonts/oxygen-bold.woff') format('woff');
-  font-weight: normal;
-  font-style: bold;
-}
-
-/* Shadows into Light font family from Google Fonts, only normal */
-@font-face {
-  font-family: 'shadows_into_lightregular';
-  src: url('fonts/shadowsintolight-regular.woff2') format('woff2'),
-    url('fonts/shadowsintolight-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-    font-family:'Monocraft';
-    src: url('fonts/Monocraft.woff2') format('woff2'),
-		url('fonts/Monocraft.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00FD;
-}
+/* Google Fonts, all fonts used */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Shadows+Into+Light&display=swap');
 
 @viewport {
   width: device-width;
@@ -50,94 +17,228 @@
 }
 
 :root {
-  --nav-primary: #312509;
+  --nav-primary: #2e240a;
   --nav-secondary: #c69c72;
-  --body-primary: #b1f8f2;
+  --body-primary: #797362;
   --body-secondary: #046b76;
   --color-pop: #8dB38b;
   --default-num-columns: 3;
-  --primary-text: "oxygenregular";
-  --bold-text: "oxygenbold";
-  --quote-text: "shadows_into_lightregular";
+  --primary-text: "Oxygen";
+  --bold-text: "Oxygen";
+  --quote-text: "Shadows Into Light", cursive;
 }
+
+/* PLANT POTS */
+
+.plantpots {
+  width: 40%;
+  position: fixed;
+  height: 45px;
+  top: 10px;
+  left: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.planter {
+  float: left;
+  position: relative;
+  background-color: blue;
+}
+
+.plantpan {
+  position:absolute;
+  top: 35px;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px 5px 100px 100px;
+  background-color: #4a412f;
+}
+
+.plantpot {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  z-index: -1;
+  width: 40px;
+  height: 20px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #6e634d;
+}
+
+.plantlip {
+  position: absolute;
+  top: 15px;
+  left: 2.5px;
+  background-color: #4a412f;
+  width: 45px;
+  height: 5px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* PLANTS */
+
+#mood {
+  position: absolute;
+  background-color: #a0ab7b;
+  height: 40px;
+  width: 2.5px;
+  left: 20px;
+  z-index: -3;
+  rotate: 15deg;
+}
+
+#mood span {
+  background-color: inherit;
+  position: absolute;
+  width: 15px;
+  height: 6px;
+  border-radius: 100%;
+  rotate: -30deg;
+  left: -1px;
+  top: -2px;
+}
+
+#anxiety {
+  position: absolute;
+  background-color: #a0ab7b;
+  height: 40px;
+  width: 4px;
+  top: 0px;
+  left: 22.5px;
+  z-index: -3;
+  rotate: -20deg;
+}
+
+#anxiety span {
+  background-color: inherit;
+  position: absolute;
+  width: 12px;
+  height: 6px;
+  border-radius: 100%;
+  rotate: 30deg;
+  left: 1px;
+  top: 5px;
+}
+
+#psychosis {
+  position: absolute;
+  background-color: #a0ab7b;
+  height: 50px;
+  width: 6px;
+  top: -5px;
+  left: 20px;
+  z-index: -3;
+  rotate: -8deg;
+}
+
+#psychosis span {
+  background-color: #ad9668;
+  position: absolute;
+  width: 15px;
+  height: 7px;
+  border-radius: 10px 0px 10px 0px;
+  rotate: 15deg;
+  left: 10px;
+  top: 6px;
+}
+
+#dissociation {
+  position: absolute;
+  background-color: #a0ab7b;
+  height: 40px;
+  width: 5px;
+  left: 28px;
+  top: -5px;
+  z-index: -3;
+  rotate: 12deg;
+}
+
+#eating {
+  background-color: #a0ab7b;
+  position: absolute;
+  height: 30px;
+  width: 5px;
+  top: 5px;
+  left: 15px;
+  z-index: -3;
+  rotate: 5deg;
+}
+
+#neurodivergence {
+  background-color: #a0ab7b;
+  position: absolute;
+  height: 35px;
+  width: 5px;
+  top: -5px;
+  left: 20px;
+  z-index: -3;
+  rotate: -15deg;
+}
+
+/* NAVIGATION */
 
 .navbar {
   position: fixed;
   background-color: var(--nav-primary);
-  color: white;
-  z-index: 1;
-  height: 10%;
+  height: 25px;
   width: 100%;
-  top: 0%;
+  top: 50px;
   left: 0%;
   font-family: var(--bold-text);
+  font-weight: bold;
 }
 
 .nav-title {
-  position: relative;
-  width: 100px;
-  height: 30%;
-  text-align: right;
-  left: 5%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: inherit;
+  width: fit-content;
+  height: fit-content;
+  float: left;
+  position: absolute;
+  left: 2.5%;
 }
 
 .navbar-button {
-  background-color: var(--nav-primary);
-  color: white;
-  width: 150px;
-  height: 100%;
+  width: fit-content;
+  height: fit-content;
   float: right;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: inherit;
+  position: absolute;
+  right: 2.5%;
 }
 
-.navbar-button:hover {
-  filter: brightness(200%);
-  color: #a9a9a9;
-}
+/* BODY */
 
 .below-nav {
   position: absolute;
-  top: 10%;
+  top: 75px;
   width: 100%;
-  left:0%;
+  left:0%;  
+  z-index: -1;
 }
 
 body {
   background-color: var(--body-primary);
   color: black;
   font-family: var(--primary-text);
-}
-
-b {
-  font-family: var(--bold-text);
+  font-weight: normal;
 }
 
 a {
   color: var(--color-pop);
   text-decoration: none;
   text-decoration-style: bold;
+  font-weight: bold;
+}
+
+b {
+  font-family: var(--bold-text);
 }
 
 h1 h2 h3 h4 h5 h6 p {
   color: black;
 }
 
-.black-text {
-  color: black;
-}
-
-.border {
-  border: 1px solid var(--color-pop);
-  border-radius: 15px;
+li {
+  list-style-type: none;
 }
 
 .row {
@@ -179,6 +280,17 @@ table, tr, td {
     width: 95%;
     min-height: 0px;
   }
+}
+
+/* TWEAKS */
+
+.black-text {
+  color: black;
+}
+
+.border {
+  border: 1px solid var(--color-pop);
+  border-radius: 15px;
 }
 
 .fix-center {

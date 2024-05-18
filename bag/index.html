@@ -4,16 +4,114 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="main.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
     </head>
     <body>      
+        <div class="plantpots">
+            <!-- this contains different "plants" to keep alive. in the future can help with quick access to different mental illness resources -->
+            <a class="planter">
+              <li class="plantpan"></li> <!-- Each pot gets its colour based on the mental illness/divergence -->
+              <li class="plantpot"></li>
+              <li class="plantlip"></li>
+              <li id="mood"><span></span></li> <!-- this will be the only unique part for the plant part-->
+            </a> <!-- mood disorders -->
+            <a class="planter">
+              <li class="plantpan"></li> <!-- Each pot gets its colour based on the mental illness/divergence -->
+              <li class="plantpot"></li>
+              <li class="plantlip"></li>
+              <li id="anxiety"><span></span></li> 
+            </a> <!-- anxiety -->
+            <a class="planter">
+              <li class="plantpan"></li> <!-- Each pot gets its colour based on the mental illness/divergence -->
+              <li class="plantpot"></li>
+              <li class="plantlip"></li>
+              <li id="psychosis"><span></span></li> 
+            </a> <!-- psychosis -->
+            <a class="planter">
+              <li class="plantpan"></li> <!-- Each pot gets its colour based on the mental illness/divergence -->
+              <li class="plantpot"></li>
+              <li class="plantlip"></li>
+              <li id="dissociation"></li> 
+            </a> <!-- dissociation -->
+            <a class="planter">
+              <li class="plantpan"></li> <!-- Each pot gets its colour based on the mental illness/divergence -->
+              <li class="plantpot"></li>
+              <li class="plantlip"></li>
+              <li id="eating"></li> 
+            </a> <!-- EDs -->
+            <a class="planter">
+              <li class="plantpan"></li> <!-- Each pot gets its colour based on the mental illness/divergence -->
+              <li class="plantpot"></li>
+              <li class="plantlip"></li>
+              <li id="neurodivergence"></li> 
+            </a> <!-- NDs -->
+            <!-- pots based on symptom groups, not diagnoses -->
+        </div>
         <div class="navbar">
-          <h1 class="nav-title"><a href="/values.html" target="_blank">Values</a></h1>
+          <h1 class="navbar-button"><a href="https://mentallyobscure.org">Go back!</a></h1>
         </div>
         
         <div class="below-nav">
-            <h1>
-                Hi, there's no information here yet, but you can access the Values Card Sort tool in the top bar. <a href="https://mentallyobscure.org">Go back!</a>
-            </h1>
+            <div class="internal-column">
+                <h4>This area is in initial development but available for public access for testing purposes. Sorting and filtering is currently unavailable, but the resources should be expected to work.</h4>
+                <br/>
+                <!--
+
+                    Main body: 75%, 60%?
+
+                -->
+
+                <div id="skillsbox">
+                    <a class="tool item" href="https://metanoia.org/suicide" target="_blank">Suicide - Read this First</a>
+                    <a class="skill item" href="https://www.youtube.com/watch?v=zilmlTO5i9Q" target="_blank">5-4-3-2-1 Grounding Technique</a>
+                    <a class="guide item" href="https://www.metanoia.org/choose/" target="_blank">Choosing a Competent Counselor or Therapist</a>
+                    <a class="tool item" href="/values.html" target="_blank">Values</a>
+                </div>
+
+                <!--
+
+                    Sort / Filter tool: 
+                    Tags
+                    Format
+                    Sort
+                    # per Page    
+                
+                -->
+
+                <div id="tagbox">
+                    <div id="sorterbox">
+                        <!--
+                            Sort alphabetically by name, alphabetically by tag, in order added, by type of resource
+                       -->
+                       <a id="sortme">SORT: ALPHABETICALLY BY NAME</a><br/>
+                    </div>
+                    <div id="filterbox">
+                        <!--
+                            Include/exclude specific categories of resources
+                            Limit or increase amount per page
+                            Filter by tag from tag list (tag list compiled from existing tags)
+
+                        -->
+                        <span id="categories">Categories</span><br/>
+                        <a class="skill sortitem">Skill</a><br/>
+                        <a class="tool sortitem">Tool</a><br/>
+                        <a class="guide sortitem">Guide</a><br/>
+                        <hr>
+                        <span id="tags">Tags</span><br/>
+                        <a>Depression</a>, <a>Dissociation</a>, <a>Therapy</a>
+                        <hr>
+                        <span id="countperpage"># per Page</span><br/>
+                        <a>16</a> | <a>25</a> | <a>36</a> | <a>49</a>
+                    </div>
+                </div>
+
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                    <image id="emptybag" height="200" width="300" href="picsvg_download.jpg" />
+                    <image id="smallbag" height="200" width="300" href="picsvg_download(1).jpg" />
+                    <image id="plumpbag" height="200" width="300" href="picsvg_download(2).jpg" />
+                </svg>
+                <script src="app.js"></script>
+            </div>
         </div>
     </body>
 </html>
