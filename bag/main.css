@@ -187,6 +187,7 @@
   left: 0%;
   font-family: var(--bold-text);
   font-weight: bold;
+  z-index: 1;
 }
 
 .nav-title {
@@ -211,8 +212,7 @@
   position: absolute;
   top: 75px;
   width: 100%;
-  left:0%;  
-  z-index: -1;
+  left:0%;
 }
 
 body {
@@ -289,6 +289,7 @@ table, tr, td {
   height: 100%;
   float: left;
   display: flex;
+  flex-wrap: wrap;
 }
 
 #tagbox {
@@ -335,6 +336,12 @@ table, tr, td {
 
 .guide {
   border-radius: 50%;
+}
+
+#baggy {
+  position: fixed;
+  right: 60px;
+  bottom: 0%;
 }
 
 /* TWEAKS */
