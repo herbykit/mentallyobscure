@@ -280,6 +280,16 @@ table, tr, td {
     width: 95%;
     min-height: 0px;
   }
+  
+  .plantpots {
+    width: 80%;
+    left: 5%;
+  }
+  
+  div.btn-container {
+    bottom: 0%;
+    position: fixed;
+  }
 }
 
 /* TWEAKS */

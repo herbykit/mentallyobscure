@@ -280,6 +280,11 @@ table, tr, td {
     width: 95%;
     min-height: 0px;
   }
+  
+  .plantpots {
+    width: 80%;
+    left: 5%;
+  }
 }
 
 /* COPING BAG */
