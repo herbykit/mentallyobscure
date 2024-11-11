@@ -205,11 +205,13 @@ td {
 }
 
 .row {
+  position: relative;
+  left: 0px;
   width: 95vw;
 }
 
 .spacer {
-  height: 2vh;
+  height: 10vh;
 }
 
 .column {
@@ -233,7 +235,7 @@ td {
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   min-height: 50px;
-  min-width: 100px;;
+  min-width: 100px;
   padding: 5px;
   margin: 5px;
   border:1px solid black;
@@ -241,6 +243,7 @@ td {
 
 .fix-center {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
@@ -399,7 +402,7 @@ td {
 
 /* Screen Size accomodation */
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:900px) {
   /* For tablets: */
   .navbar {
     height: 40px;
@@ -480,14 +483,6 @@ td {
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
-  }
-
-  .row {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    text-align: center;
   }
 
   .footer {
@@ -611,14 +606,6 @@ td {
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
-  }
-
-  .row {
-    width: 100%;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    text-align: center;
   }
 
   .desktop {
