@@ -19,11 +19,13 @@
             data() {
               return {
                 resources : ref([
-                  { class: 'tool item', href: 'https://metanoia.org/suicide', text: 'Suicide - Read this First'},
-                  { class: 'skill item', href: 'https://www.youtube.com/watch?v=zilmlTO5i9Q', text: '5-4-3-2-1 Grounding Technique'},
-                  { class: 'guide item', href: 'https://www.metanoia.org/choose/', text: 'Choosing a Competent Counselor or Therapist'},
-                  { class: 'tool item', href: '/values.html', text:'Values'},
-                  { class: 'tool item', href: 'https://bag.mentallyobscure.org/docs/fatigued_meal_chart.pdf', text: 'Meal Chart for Fatigue'}
+                  { data: 'depression', class: 'tool item', href: 'https://metanoia.org/suicide', text: 'Suicide - Read this First'},
+                  { data: 'dissociation therapy', class: 'skill item', href: 'https://www.youtube.com/watch?v=zilmlTO5i9Q', text: '5-4-3-2-1 Grounding Technique'},
+                  { data: 'therapy', class: 'guide item', href: 'https://www.metanoia.org/choose/', text: 'Choosing a Competent Counselor or Therapist'},
+                  { data: 'therapy goals depression', class: 'tool item', href: '/values.html', text:'Values'},
+                  { data: 'MECFS fatigue', class: 'tool item', href: 'https://bag.mentallyobscure.org/docs/fatigued_meal_chart.pdf', text: 'Meal Chart for Fatigue'},
+                  { data: 'depression anxiety therapy', class: 'guide item', href: 'https://comfortpack.carrd.co/', text: 'Comfort Pack'},
+                  { data: 'therapy depression anxiety', class: 'tool item', href: 'https://thechalkboardmag.com/the-feelings-circle-chart-emotional-communication/', text: 'Emotion/Feelings Wheel'}
                 ])
               }
             }
@@ -31,7 +33,8 @@
         </script>
     </head>
     <body>      
-        <div class="plantpots">
+        <div class="plantcontainer">
+          <div class="plantpots">
             <!-- this contains different "plants" to keep alive. in the future can help with quick access to different mental illness resources -->
             <a class="planter">
               <li class="plantpan"></li> <!-- Each pot gets its colour based on the mental illness/divergence -->
@@ -70,6 +73,7 @@
               <li id="neurodivergence"></li> 
             </a> <!-- NDs -->
             <!-- pots based on symptom groups, not diagnoses -->
+          </div>
         </div>
         <div class="navbar">
           <h1 class="navbar-button"><a href="https://mentallyobscure.org">Go back!</a></h1>
@@ -77,10 +81,10 @@
         
         <div class="below-nav">
             <div class="internal-column">
-                <h4>This area is in initial development but available for public access for testing purposes. Sorting and filtering is currently unavailable, but the resources should be expected to work.</h4>
+                <h5>This area is in development but available for public access for testing purposes. Sorting and filtering is currently unavailable, but the resources are functional.</h5>
                 <br/>
                 <div id="skillsbox">
-                  <a v-for="resource in resources" :key="resource.class" :class="resource.class" :href="resource.href" target="_blank">
+                  <a v-for="resource in resources" :key="resource.class" :class="resource.class" :href="resource.href" target="_blank" :data-value="resource.data">
                     {{resource.text}}
                   </a>
                 </div>
@@ -99,8 +103,9 @@
                         <!--
                             Sort alphabetically by name, alphabetically by tag, in order added, by type of resource
                        -->
-                       <a id="sortme">SORT: ALPHABETICALLY BY NAME</a><br/>
+                       <a id="sortme" class="black-text">SORTING: <span id="sorttype" class="black-text">ALPHABETICALLY BY NAME</span></a><br/>
                     </div>
+                    <br/>
                     <div id="filterbox">
                         <!--
                             Include/exclude specific categories of resources
@@ -108,24 +113,17 @@
                             Filter by tag from tag list (tag list compiled from existing tags)
 
                         -->
-                        <span id="categories">Categories</span><br/>
+                        <span id="tags" class="sortitem">Tags</span>
+                        <br/>
+                        <span id="categories">Categories</span>
+                        <div class="underline"></div>
+                        <br/><br/>
                         <a class="skill sortitem">Skill</a><br/>
                         <a class="tool sortitem">Tool</a><br/>
                         <a class="guide sortitem">Guide</a><br/>
-                        <hr>
-                        <span id="tags">Tags</span><br/>
-                        <a>Depression</a>, <a>Dissociation</a>, <a>Therapy</a>
-                        <hr>
-                        <span id="countperpage"># per Page</span><br/>
-                        <a>16</a> | <a>25</a> | <a>36</a> | <a>49</a>
                     </div>
                 </div>
 
-                <svg id="baggy" xmlns="http://www.w3.org/2000/svg">
-                  <image height="80%" width="80%" id="emptybag" href="picsvg_download.svg" />
-                  <image height="80%" width="80%" id="smallbag" href="picsvg_download(1).svg" />
-                  <image height="80%" width="80%" id="plumpbag" href="picsvg_download(2).svg" />
-                </svg>
 
                 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
                 <script>
@@ -139,5 +137,10 @@
                 <script src="app.js"></script>
             </div>
         </div>
+        <svg id="baggy" xmlns="http://www.w3.org/2000/svg">
+          <image height="80%" width="80%" id="emptybag" href="picsvg_download.svg" />
+          <image height="80%" width="80%" id="smallbag" href="picsvg_download(1).svg" />
+          <image height="80%" width="80%" id="plumpbag" href="picsvg_download(2).svg" />
+        </svg>
     </body>
 </html>
